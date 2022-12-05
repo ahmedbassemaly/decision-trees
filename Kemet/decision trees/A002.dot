@@ -1,0 +1,39 @@
+digraph A002{
+    //LABELS
+    S029_I010[label="S029"]
+    S029_G037A[label="S029"]
+    N035_G017[label="N035"]
+
+    A002 [shape=diamond];
+    A002->leftX[headlabel="left" labeldistance=3];
+
+    //LEFT
+    leftX->S029
+    S029->T035[headlabel="left" labeldistance=2.7] ;
+    T035->N035[headlabel="up" labeldistance=2.7] ;
+    N035->"Call out"
+
+    leftX->D021
+    D021->upX[headlabel="up" labeldistance=2.7] ;
+    upX->W011->"Silent"
+    upX->X007
+    X007->V028[headlabel="left" labeldistance=2.7] ;
+    V028->"hungry"
+    upX->G037A
+    G037A->S029_G037A[headlabel="left" labeldistance=2.7] ;
+    S029_G037A->"drink"
+
+    leftX->G001
+    G001->V031[headlabel="left" labeldistance=2.7] ;
+    V031->"Think"
+
+    leftX->D046
+    D046->I010[headlabel="up" labeldistance=2.7] ;
+    I010->S029_I010[headlabel="left" labeldistance=2.7] ;
+    S029_I010->"recount"
+
+    leftX->G017
+    G017->N035_G017[headlabel="left" labeldistance=2.7] ;
+    N035_G017->E034[headlabel="up" labeldistance=2.7] ;
+    E034->"Eat"
+}

@@ -1,0 +1,17 @@
+digraph O049{
+    O049[shape=diamond];
+    O049->leftX[headlabel="left" labeldistance=3];
+    O049->upX[headlabel="up" labeldistance=3];
+
+    //LEFT
+    leftX->S029
+    S029->T035[headlabel="left" labeldistance=3];
+    T035->X007[headlabel="left" labeldistance=3];
+    X007->"Qis (Place-name)"
+
+    //UP
+    upX->NO35
+    NO35->S034[headlabel="right" labeldistance=2.7];
+    S034->"Soldier of the town regment"
+
+}

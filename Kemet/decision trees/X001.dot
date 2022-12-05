@@ -1,0 +1,53 @@
+digraph X001{
+    X001[shape=diamond];
+    X001->leftX[headlabel="left" labeldistance=3];
+    X001->downX[headlabel="down" labeldistance=2.3];
+    X001->upX[headlabel="up" labeldistance=3];
+
+    //LABELS
+    X001_D003[label="X001"]
+    V028_AND[label="V028"]
+
+
+    //TRANSITIONS
+    AND[label="AND"]
+    AND_X007[label="AND"]
+
+    //LEFT
+    leftX->D003
+    D003->X001_D003[headlabel="left" labeldistance=3];
+    X001_D003->D021[headlabel="up" labeldistance=3];
+    D021->G001->K005[headlabel="left" labeldistance=3];
+    K005->"Widow"
+
+    leftX->T007A
+    T007A->"God's father"
+    T007A->I009[headlabel="up" labeldistance=3];
+    I009->"God's father"
+
+    //DOWN
+    downX->S019
+    S019->L002[headlabel="right" labeldistance=3.2];
+    L002->"King's seal bearer"
+
+    //UP
+    upX->F035
+    F035->AND
+    AND->A048[headlabel="left" labeldistance=3.5];
+    AND->F004[headlabel="right" labeldistance=3.2];
+    A048->"Keeper of the royal diadem"
+    F004->"Keeper of the royal diadem"
+
+    upX->Q003
+    Q003->V028[headlabel="right" labeldistance=3.1];
+    V028->"Ptah"
+
+    upX->X007
+    X007->AND_X007
+    AND_X007->V028_AND[headlabel="left" labeldistance=3.5];
+    AND_X007->A041[headlabel="left" labeldistance=3.5];
+
+    V028_AND->"Heket"
+    A041->"Heket"
+
+}

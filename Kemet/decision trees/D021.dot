@@ -1,0 +1,39 @@
+digraph D021 {
+//Labels
+N005_D036[label="N005"]
+EA133EA[label="133EA"]
+D021_133EA[label="D021"]
+
+    D021 [shape=diamond];
+    D021->upX[headlabel="up" labeldistance=3.5];
+    D021->downX[headlabel="down" labeldistance=4];
+
+    //UP
+    upX->V031
+    upX->O001
+    upX->O004;
+    V031->O034 [headlabel="up" labeldistance=2.7] ;
+    O034->"Seker";
+    O034->A040[headlabel="right" labeldistance=2.7 labelangle=-45];
+    A040->"The god (Soker)";
+    O001->D054[headlabel="up" labeldistance=2.7] ;
+    D054->"walk"
+    O004->G001->N005[headlabel="right" labeldistance=2.7 labelangle=-45];
+    N005->"Day";
+    
+    //DOWN
+    downX->Z015
+    downX->D036
+    downX->AA001;
+    Z015->G017[headlabel="left" labeldistance=2.7] ;
+    G017->Z003->EA133EA->D021_133EA[headlabel="right" labeldistance=3.5 labelangle=45] ;
+    D021_133EA->G037A[headlabel="up" labeldistance=2.2 labelangle=-45] ;
+    G037A->"General in chief";
+    D036->N005_D036[headlabel="right" labeldistance=3 labelangle=-45] ;
+
+    N005_D036->"Ra,Re";
+    AA001->Y001[headlabel="down" labeldistance=2.7 labelangle=-45] ;
+    Y001->M023[headlabel="left" labeldistance=2.7 labelangle=-45] ;
+    M023->"King’s adviser, Royal intimate";
+    
+}
